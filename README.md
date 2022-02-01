@@ -1,10 +1,7 @@
 
 ___________________________________________________________________________________
 
-# CoreBook  X   OpenCore
-
-> #### If you found my work useful and want to contribute in some way, you can now offer me a beer
-> #### [PayPal 🍻](https://www.paypal.com/paypalme/boldiniroberto) 
+# CoreBook  X Gen8 Model JCorB   OpenCore
 
 ___________________________________________________________________________________
 
@@ -13,23 +10,22 @@ ________________________________________________________________________________
 
 ___________________________________________________________________________________
 
-### November 2021
+### February 2022
 > **Device is now 99% working!**
 
 **Working:**
 - Wifi and BT Intel
 - Brightness Level from preferencies and menu bar
-- HD Audio (I can't test the right side plug, i assume it work due to lack of reports)
+- HD Audio 
 - I2C Trackpad with Gesture
-- Automatic Keyboard backlight (Can't change it like in Linux and Windows with f5)
+- Automatic Keyboard backlight 
 - Sleep / Wake with Lid detection
 - Battery Status (No Service Recommended Notification) & AC Adapter detection
 
 Not working:
 - Brightness keys: 
   - No idea in how i can fix. Someone has an hint? Standard patching method are not working
-  - If you long press f6 and f7 they will work randomly.
-  - Same thing for keyboard backlight, it work but there is no way to change it from keyboard or system.
+  - If you long press f6 and f7 they will work laggy
 
 Issue:
 - Airdrop: 
@@ -88,4 +84,6 @@ ________________________________________________________________________________
 > ### [Acidanthera](https://github.com/acidanthera) for OpenCore, and all the public kexts. [License](https://github.com/acidanthera/OpenCorePkg/blob/master/LICENSE.txt)
 > ### [OpenIntelWireless](https://github.com/OpenIntelWireless) for Intel Wifi and Bluetooth support. [License](https://github.com/OpenIntelWireless/itlwm/blob/master/LICENSE)
 > ### Rehabman for ACPIPoller and a way to let me fix LID and AC detection.
-> And Me [rboldini](https://github.com/rboldini) for EC mapping, SSDT-BATT and SSDT-LID-AC coding.
+> ### [weachy] for config.plist and kexts as starting point
+> ### [rboldini](https://github.com/rboldini) for EC mapping, SSDT-BATT and SSDT-LID-AC coding. And his pacience and time.
+> And me [terminet85](https://github.com/terminet85) for patching to support Model JCoreB (EC mapping, Battery Fix with A/C support) 
