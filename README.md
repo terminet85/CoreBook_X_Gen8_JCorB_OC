@@ -26,6 +26,8 @@ Not working:
 - Brightness keys: 
   - No idea in how i can fix. Someone has an hint? Standard patching method are not working
   - If you long press f6 and f7 they will work laggy
+- Ambient Light Sensor Device
+  - Even if we found the Device in DSDT table, on my unit doesn't work in vanilla Windows 11 setup. Maybe sensor isn't installed in this model. [Need confirm]
 
 Issue:
 - Airdrop: 
