@@ -7,7 +7,9 @@
         <key>#Repository</key>
         <string>https://github.com/terminet85/CoreBook_X_Gen8_JCorB_OC</string>
         <key>#Version</key>
-        <string>OpenCore-CoreBookX-JCorB-20220201</string>
+        <string>OpenCore-CoreBookX-JCorB-20220506</string>
+        <key>#OpenCore</key>
+        <string>0.8.0</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -482,7 +484,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.9</string>
+                    <string>V1.6.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -500,7 +502,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -518,7 +520,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.6</string>
+                    <string>V1.5.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -554,7 +556,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -572,7 +574,7 @@
                     <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -590,7 +592,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -608,7 +610,7 @@
                     <key>BundlePath</key>
                     <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -626,7 +628,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.8</string>
+                    <string>V1.7.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -698,7 +700,7 @@
                     <key>BundlePath</key>
                     <string>VoodooI2C.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.5 | I2C</string>
+                    <string>V2.7 | I2C</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -734,7 +736,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7 | PS2Controller</string>
+                    <string>V2.2.8 | PS2Controller</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -752,7 +754,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7 | Keyboard</string>
+                    <string>V2.2.8 | Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -860,7 +862,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.0.1</string>
+                    <string>V2.1.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -952,6 +954,10 @@
                 <false/>
                 <key>XhciPortLimit</key>
                 <false/>
+                <key>CustomPciSerialDevice</key>
+                <false/>
+                <key>ForceAquantiaEthernet</key>
+                <false/>
             </dict>
             <key>Scheme</key>
             <dict>
@@ -1012,12 +1018,12 @@
                 <integer>0</integer>
                 <key>DisplayLevel</key>
                 <integer>2147483650</integer>
-                <key>SerialInit</key>
-                <false/>
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
                 <integer>3</integer>
+                <key>LogModules</key>
+                <string>*</string>
             </dict>
             <key>Entries</key>
             <array/>
@@ -1077,6 +1083,13 @@
                     <false/>
                 </dict>
             </array>
+            <key>Serial</key>
+                <dict>
+                    <key>Init</key>
+                    <false/>
+                    <key>Override</key>
+                    <false/>
+                </dict>
         </dict>
         <key>NVRAM</key>
         <dict>
@@ -1176,7 +1189,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02808310GUJH4R1H</string>
+                <string>C020092704NJH4RJC</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1190,9 +1203,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro15,2</string>
                 <key>SystemSerialNumber</key>
-                <string>C02W9TYKJHCC</string>
+                <string>C02CCHYBJHCC</string>
                 <key>SystemUUID</key>
-                <string>B48D054A-B7BE-4ABF-86D0-2445F42B717F</string>
+                <string>045DB64D-D0BF-4C68-B26E-F5830A78EBF8</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
